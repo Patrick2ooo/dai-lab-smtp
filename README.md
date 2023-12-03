@@ -67,6 +67,9 @@ Le client contient toute les informations nécessaire à la connexion à un serv
 Le main va s'occuper d'instancier lees différents spam/pranks avec les information fourni par notre classe configuration, on va ensuite se servir de la classe Client pour envoyé tout les prank, configuré par les classes PrankConfig et Prank.
 
 ## Exemple
+Affichage des e-mails reçu par le seerveur SMTP (Nombre de groupe = 3) :
+
+![image](https://github.com/Patrick2ooo/dai-lab-smtp/assets/44113916/6151dfc9-436a-4dc8-b3d7-585b94f9c2c4)
 
 
 
