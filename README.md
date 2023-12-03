@@ -42,6 +42,8 @@ Une fois ces commandes exécuter, vous pourrez voir les différents mail qui ont
 # Implementation
 ## Schéma UML
 
+![image](https://github.com/Patrick2ooo/dai-lab-smtp/assets/44113916/449b162f-4e21-48a1-9cc8-0b0ca1355d95)
+
 ## Config
 ### Configuration.java
 Ce fichier permet d'ajouter à notre code le contenu des différents fichier texte que vous avez pu configurer lors de l'installation, ainsi que de contrôler si les mail que vous avez défini sont bel et bien valide.
