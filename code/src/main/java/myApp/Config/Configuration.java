@@ -16,7 +16,7 @@ public class Configuration {
     ArrayList<Message> messages = new ArrayList<Message>();
     int nbrDeGroupe;
 
-    //found in https://www.geeksforgeeks.org/check-email-address-valid-not-java/
+    //trouvé à https://www.geeksforgeeks.org/check-email-address-valid-not-java/
     String emailRegex = "^[a-zA-Z0-9_+&*-]+(?:\\."+ 
                             "[a-zA-Z0-9_+&*-]+)*@" + 
                             "(?:[a-zA-Z0-9-]+\\.)+[a-z" + 
@@ -27,8 +27,9 @@ public class Configuration {
 
     public Configuration(){}
 
+    //lis le fichier contenant les victimes
     public void addVictims(String filename){        
-        //lire fichier victims
+
         try(var reader = new BufferedReader(new InputStreamReader(new FileInputStream(filename), StandardCharsets.UTF_8))){
             String line;
             while((line = reader.readLine()) != null){
@@ -39,8 +40,9 @@ public class Configuration {
         }
 
     }
+    //lis le fichier contenant les messages
     public void addMessage(String filename){
-        //lire fichier message
+        
         String sujet = new String();
         boolean isBody = false;
         StringBuilder content = new StringBuilder();
@@ -68,6 +70,7 @@ public class Configuration {
         }
     }
 
+    //lis le fichier contenant le nombre de groupe
     public void addNbrDeGroupe(String filename){
 
         try(var reader = new BufferedReader(new InputStreamReader(new FileInputStream(filename), StandardCharsets.UTF_8))){

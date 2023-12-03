@@ -11,6 +11,7 @@ public class Prank {
         this.message = message;
     }
 
+    //met en place tout le contenu d'un email
     public Mail setupMail(){
         ArrayList<Personne> receiver = new ArrayList<Personne>();
         receiver.addAll(groupe.getGroupe().subList(1, groupe.getGroupe().size()));

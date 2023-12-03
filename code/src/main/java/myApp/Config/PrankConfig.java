@@ -12,12 +12,11 @@ public class PrankConfig {
         this.config = config;
     }
 
+    //créer les différents groupe de victime aléatoirement
     public ArrayList<Groupe> PrankGroupes(){
         ArrayList<Groupe> groupes = new ArrayList<>();
         ArrayList<Personne> victims = new ArrayList<Personne>(config.getVictims());
         Collections.shuffle(victims);
-
-        
 
         for(int i = 0; i < config.getNbrDeGroupe(); i++){
             int taille = victims.size();
@@ -33,6 +32,7 @@ public class PrankConfig {
         return groupes;
     }
 
+    //créer les différent prank
     public ArrayList<Prank> PrankSetup(){
         ArrayList<Prank> pranks = new ArrayList<>();
         ArrayList<Groupe> groupes = PrankGroupes();

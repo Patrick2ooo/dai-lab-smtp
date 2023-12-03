@@ -21,6 +21,7 @@ public class Client{
         this.ServerPort = ServerPort;
     }
 
+    //envoie au serveur et vérification de la réponse
     private void sendAndCheck(String content) throws IOException{
         out.write(content + "\r\n");
         out.flush();
@@ -32,6 +33,7 @@ public class Client{
     }
 
 
+    //envoie du mail au serveur SMTP, pour plus de détail regarder le lien suivant: https://datatracker.ietf.org/doc/html/rfc5321
     public void envoieMail(Mail mail){
         Socket clientSocket;
         try{
