@@ -49,7 +49,7 @@ Ce fichier permet d'ajouter à notre code le contenu des différents fichier tex
 ### PrankConfig.java
 Cette partie nous permets de configurer les différents groupe (créé aléatoirement avec les mail que vous avez fourni) pour notre campagne de prank
 
-##MailConfig
+## MailConfig
 se dossier contient toutes les classe permettant de modéliser notre Campagne
 - Groupe: contient toutes les information concernant un groupe
 - Mail: contient toutes les informations concernant un email
@@ -66,7 +66,7 @@ Le client contient toute les informations nécessaire à la connexion à un serv
 ## Main
 Le main va s'occuper d'instancier lees différents spam/pranks avec les information fourni par notre classe configuration, on va ensuite se servir de la classe Client pour envoyé tout les prank, configuré par les classes PrankConfig et Prank.
 
-##Exemple
+## Exemple
 
 
 
