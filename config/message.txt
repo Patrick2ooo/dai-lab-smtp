@@ -1,0 +1,21 @@
+Mail 1: 
+
+Subject: Test ⛄
+Body: ceci est un message
+
+
+---
+
+Mail 2:
+
+Subject: Hello
+Body: Comment allez-vous ? 😆
+
+---
+
+Mail 3:
+
+Subject: Aurevoir
+Body: Je vous souhaite une bonne soirée
+
+---

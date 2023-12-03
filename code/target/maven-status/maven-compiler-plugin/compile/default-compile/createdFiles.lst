@@ -1,0 +1,9 @@
+myApp/Config/Configuration.class
+myApp/Config/PrankConfig.class
+myApp/MailConfig/Message.class
+myApp/MailConfig/Personne.class
+myApp/Main.class
+myApp/MailConfig/Groupe.class
+myApp/MailConfig/Mail.class
+myApp/MailConfig/Prank.class
+myApp/SMTP/Client.class
