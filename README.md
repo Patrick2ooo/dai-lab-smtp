@@ -44,6 +44,29 @@ Une fois ces commandes exécuter, vous pourrez voir les différents mail qui ont
 
 ## Config
 ### Configuration.java
-Ce fichier permet d'ajouter les différents contenu que vous avez 
+Ce fichier permet d'ajouter à notre code le contenu des différents fichier texte que vous avez pu configurer lors de l'installation, ainsi que de contrôler si les mail que vous avez défini sont bel et bien valide.
+
+### PrankConfig.java
+Cette partie nous permets de configurer les différents groupe (créé aléatoirement avec les mail que vous avez fourni) pour notre campagne de prank
+
+##MailConfig
+se dossier contient toutes les classe permettant de modéliser notre Campagne
+- Groupe: contient toutes les information concernant un groupe
+- Mail: contient toutes les informations concernant un email
+- Message : contient tout le contenu d'un email
+- Personne: contient l'email d'une personne
+
+### Prank.java
+Ce fichier contient toutes les informations nécessaire à un Prank pour un groupe spécifique, il permet aussi de configurer le Mail (setupMail), donc qui est l'envoyeur, qui sont les destinataire, ainsi que le contenu du message.
+
+## SMTP
+### Client.java
+Le client contient toute les informations nécessaire à la connexion à un serveur, ainsi que les différentes interaction entre le serveur et le clients. la méthode envoieMail gère toutes ces interaction, l'implémentation à été réalisée à l'aide de [SMTP RFC](https://datatracker.ietf.org/doc/html/rfc5321)
+
+## Main
+Le main va s'occuper d'instancier lees différents spam/pranks avec les information fourni par notre classe configuration, on va ensuite se servir de la classe Client pour envoyé tout les prank, configuré par les classes PrankConfig et Prank.
+
+##Exemple
+
 
 
